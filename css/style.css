@@ -73,6 +73,7 @@ body {
 
 #main {
     height: 100vh;
+    min-height: 400px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -99,4 +100,11 @@ footer {
     bottom: 0;
     background: red;
     width: 100%;
+}
+
+@media screen and (max-width: 900px) {
+    #about-me {
+        display: block;
+        text-align: center;
+    }
 }
