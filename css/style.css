@@ -72,14 +72,23 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 }
 
 #about-me {
     display: flex;
+    align-items: center;
+    background: #0a0a0a;
+    padding: 20px 50px 20px 20px;
+    border-radius: 50px;
 }
 
 #about-me #wrapper {
-    margin-left: 30px;
+    margin-left: 60px;
+}
+
+#about-me .text {
+    margin-top: 10px;
 }
 
 #about-me img {
@@ -91,5 +100,19 @@ body {
     #about-me {
         display: block;
         text-align: center;
+        padding: 20px 20px 45px 20px;
+        border-radius: 60px;
+    }
+
+    #about-me #wrapper {
+        margin: 0;
+        margin-top: 20px;
+        width: 360px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #about-me img {
+        width: 360px;
     }
 }
