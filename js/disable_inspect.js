@@ -1,1 +1,27 @@
-function _0x5b52() { var _0x4407db = ['6ZAXiQb', '4716984UkqfOl', 'contextmenu', 'onkeydown', '4rGYoSP', 'preventDefault', '9541112ZZuIZP', '17IzQCON', 'keyCode', 'ctrlKey', '12806577KlnXEF', '74222ZngYDW', 'shiftKey', 'addEventListener', '5091685PvNETe', '3906537BrZIxR', '5377420vBWtzu']; _0x5b52 = function () { return _0x4407db; }; return _0x5b52(); } var _0xb52cb0 = _0x356d; function _0x356d(_0x4a6252, _0x5e60e1) { var _0x5b52f4 = _0x5b52(); return _0x356d = function (_0x356d98, _0x63db07) { _0x356d98 = _0x356d98 - 0xae; var _0x5e2262 = _0x5b52f4[_0x356d98]; return _0x5e2262; }, _0x356d(_0x4a6252, _0x5e60e1); } (function (_0x1cb851, _0x53e55e) { var _0x30b668 = _0x356d, _0x124663 = _0x1cb851(); while (!![]) { try { var _0x4772c0 = -parseInt(_0x30b668(0xbb)) / 0x1 * (parseInt(_0x30b668(0xae)) / 0x2) + -parseInt(_0x30b668(0xb2)) / 0x3 * (parseInt(_0x30b668(0xb8)) / 0x4) + parseInt(_0x30b668(0xb1)) / 0x5 * (parseInt(_0x30b668(0xb4)) / 0x6) + parseInt(_0x30b668(0xba)) / 0x7 + -parseInt(_0x30b668(0xb5)) / 0x8 + parseInt(_0x30b668(0xbe)) / 0x9 + -parseInt(_0x30b668(0xb3)) / 0xa; if (_0x4772c0 === _0x53e55e) break; else _0x124663['push'](_0x124663['shift']()); } catch (_0x560c4c) { _0x124663['push'](_0x124663['shift']()); } } }(_0x5b52, 0xb59c3), document[_0xb52cb0(0xb0)](_0xb52cb0(0xb6), _0x4b7401 => _0x4b7401[_0xb52cb0(0xb9)]()), document[_0xb52cb0(0xb7)] = function (_0x1b55b9) { var _0x37426f = _0xb52cb0; if (_0x1b55b9[_0x37426f(0xbc)] == 0x7b) return ![]; if (_0x1b55b9['ctrlKey'] && _0x1b55b9['shiftKey'] && _0x1b55b9[_0x37426f(0xbc)] == 0x49) return ![]; if (_0x1b55b9[_0x37426f(0xbd)] && _0x1b55b9[_0x37426f(0xaf)] && _0x1b55b9[_0x37426f(0xbc)] == 0x4a) return ![]; if (_0x1b55b9[_0x37426f(0xbd)] && _0x1b55b9['keyCode'] == 0x55) return ![]; });
+document.addEventListener('contextmenu', event => event.preventDefault());
+
+document.onkeydown = function (e) {
+
+    if (e.keyCode == 123) {
+        return false;
+    }
+
+    if (e.ctrlKey && e.shiftKey && e.keyCode == 73) {
+        return false;
+    }
+
+    if (e.ctrlKey && e.shiftKey && e.keyCode == 74) {
+        return false;
+    }
+
+    if (e.ctrlKey && e.keyCode == 85) {
+        return false;
+    }
+}
+
+let arrow = document.querySelector("#arrow")
+let bottom = document.querySelector("#bottom")
+
+arrow.addEventListener("click", function () {
+    bottom.scrollIntoView()
+})
