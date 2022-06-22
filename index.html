@@ -2,18 +2,19 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="assets/bg.webp">
 
-    <meta content="Embed Title" property="og:title" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta charset="UTF-8">
+
+    <meta content="clumsy" property="og:title" />
     <meta content="Site Description" property="og:description" />
     <meta content="" property="og:url" />
-    <meta content="assets/bg.webp" property="og:image" />
-    <meta content="#961f1c" data-react-helmet="true" name="theme-color" />
+    <meta content="/assets/bg.webp" property="og:image" />
+    <meta content="#f04a47" data-react-helmet="true" name="theme-color" />
+
 </head>
 
 <body>
@@ -31,25 +32,23 @@
 
     <div id="header">
         <div id="container">
-            <h1>clumsy</h1>
+            <h1 class="heading">clumsy</h1>
         </div>
-        <img id="arrow" src="assets/arrow.svg" alt="arrow">
+        <img onclick="scroll()" id="arrow" src="assets/arrow.svg" alt="arrow">
     </div>
 
     <div id="main">
 
         <div id="about-me">
-            <img src="assets/pfps/IMG_9775.jfif" alt="avatar">
+            <img class="image" src="assets/pfps/IMG_9775.jfif" alt="avatar">
             <div id="wrapper">
-                <h1>hi im clumsy</h1>
-                <p>i do nothing really im just like boring kinda</p>
+                <h1 class="heading-2">hi im clumsy</h1>
+                <p class="text">i do nothing really im just like boring kinda</p>
             </div>
         </div>
 
     </div>
-
-    <footer>
-    </footer>
+    <script src="https://unpkg.com/scrollreveal"></script>
 </body>
 
 </html>
