@@ -5,7 +5,7 @@ enter.onclick = function () {
         enter.style.opacity = '0';
         audio.play();
         setTimeout(function () {
-            enter.style.display = 'none';
+            enter.remove();
         }, 500);
     }
 };
